@@ -1,7 +1,6 @@
 ﻿using System;
 
 namespace Lessons
-
 {
     class Program
     {
@@ -10,17 +9,21 @@ namespace Lessons
             try
             {
                 Console.Write("Число А: ");
-                double number1 = double.Parse(Console.ReadLine());
+                double A = double.Parse(Console.ReadLine());
                 Console.Write("Число Б: ");
-                double number2 = double.Parse(Console.ReadLine());
+                double B = double.Parse(Console.ReadLine());
                 Console.Write("Число С: ");
-                double number3 = double.Parse(Console.ReadLine());
-                double B = number1;
-                double C = number2;
-                double A = number3;
-                Console.WriteLine($"C = {C}");
+                double C = double.Parse(Console.ReadLine());
+                double ch = 0;
+                ch = A;
+                A = B;
+                B = C;
+                C = A;
+                A = B;
+                B = ch;
                 Console.WriteLine($"A = {A}");
                 Console.WriteLine($"B = {B}");
+                Console.WriteLine($"C = {C}");
             }
             catch
             {
